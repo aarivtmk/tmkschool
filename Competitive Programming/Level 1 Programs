@@ -1,0 +1,130 @@
+
+
+Find out whether a number is even or odd.
+Find out whether a number is prime or not.
+Find the sum of n natural numbers using formulae.
+Find the sum of n natural numbers without formulae.
+Printing 1 to 10 numbers using for loop
+Printing 1 to 10 numbers using while loop
+Printing 1 to 10 numbers using do while loop
+Printing 10 to 1 numbers using for loop
+Printing 10 to 1 numbers using while loop
+Printing 10 to 1 numbers using do-while loop
+Printing n table with for loop
+Printing n table up to m factor
+	Eg: Enter n : 2
+	      Enter m : 3
+	Output : 
+            2*1 = 2
+	2*2 = 4
+	2*3 = 6
+Printing tables between m and n
+	Expected output : 
+	Enter m : 2
+	Enter n : 5
+	Output : 
+	Print 2 to 5 tables
+
+Print upto n prime numbers
+Note : 2<=n<=100
+Expected output:
+Enter n: 10
+Output : 2,3,5,7
+
+	Patterns problems
+
+
+Left Increasing star pattern
+	Expected output : 
+	Enter n = 3
+
+	*
+	*  *
+            *  *  *
+
+
+
+
+
+
+
+
+
+
+
+Left decreasing star pattern
+	Expected output : 
+	Enter n = 3
+
+	*    *    * 
+	*    *
+	*
+
+
+Right increasing star pattern
+Expected output:
+Enter n = 3
+            *
+      *    *    
+*    *    * 
+
+	
+Right Decreasing star pattern
+Expected output:
+Enter n = 3
+      
+*    *    * 
+      *    *  
+            *
+  	
+Reversing the number
+	Expected output : 
+	Enter n = 123
+	Result is 321
+
+Reverse a number
+Eg:
+Enter n :  124
+Reverse number is : 421
+
+Find out if a number is palindrome or not.
+	Eg:
+	Enter n : 321
+	321 is not a palindrome
+	
+	Enter n: 121
+	121 is a palindrome
+
+
+Pointers programs
+Write a program to swap 2 numbers
+Expected output : 
+Enter a : 2
+Enter b : 3
+After swapping
+A is 3
+B is 2
+
+Write a swap program using pointers
+Expected output : 
+Enter a : 2
+Enter b : 3
+After swapping
+A is 3
+B is 2
+
+Arrays
+Print an array element by element
+Expected output:
+Imagine your array is :{5,4,3,2,1}
+the element 1 i5
+the element 2 is 4
+the element 3 is 3
+the element 4 is 2s 
+the element 5 is 1
+
+
+Find the size of the array elements
+Expected output: 
+Imagine your array is :{5,4,3,2,1}
+The size of the array is : 5
