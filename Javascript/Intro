@@ -1,0 +1,127 @@
+    Terminology:
+
+Client-Side:
+
+Environment: The client-side refers to the user's web browser or client device, such as a computer, smartphone, or tablet.
+Technologies: Client-side technologies typically involve HTML (Hypertext Markup Language) for structuring web content, CSS (Cascading Style Sheets) for styling and layout, and JavaScript for interactivity and dynamic behavior.
+Execution: The client-side technologies are executed and run directly in the user's browser, enabling the browser to render and display web content, handle user interactions, and manage the user interface.
+Responsibilities: On the client-side, the main responsibilities include handling user interactions, performing validation and form submissions, rendering and updating the user interface dynamically, making asynchronous requests to the server, and manipulating the Document Object Model (DOM) to modify web page content.
+Server-Side:
+
+Environment: The server-side refers to the web server, which is a computer or system that hosts and delivers web applications or websites.
+Technologies: Server-side technologies often involve server-side programming languages, such as Node.js, Python, PHP, Ruby, Java, or .NET, and databases for storing and managing data.
+Execution: Server-side code runs on the web server, processing requests from clients, performing data processing and calculations, interacting with databases, and generating dynamic content to be sent back to the client.
+Responsibilities: On the server-side, the main responsibilities include handling user requests, processing and storing data, implementing business logic, authentication and authorization, interacting with external services or APIs, and generating HTML, JSON, or other formats to be sent back to the client.
+Interactions:
+
+Communication: The client and server communicate with each other over the internet using standard protocols like HTTP(S). The client sends requests to the server, and the server responds with the requested data or performs actions based on the received requests.
+Data Transfer: Data is exchanged between the client and server, allowing the client to receive updated content or send user input and data to be processed and stored on the server.
+Client-Server Model: Web development often follows a client-server model, where the client-side and server-side components work together to deliver a seamless and interactive web experience. The client-side handles the user interface and interactions, while the server-side manages the backend logic and data processing.
+Overall, client-side and server-side technologies and responsibilities are complementary, each playing a crucial role in web development. They collaborate to deliver rich and dynamic web applications, with the client-side focusing on the user experience and interactivity, and the server-side handling data processing, business logic, and backend functionality.
+
+    Javascript Overview
+
+JavaScript (JS) is a high-level, interpreted programming language that is primarily used for creating interactive web pages and web applications. Here's a brief history of JavaScript:
+
+Creation at Netscape: JavaScript was created by Brendan Eich at Netscape Communications in 1995. Initially called "Mocha" and later renamed to "LiveScript," it was developed as a scripting language for Netscape Navigator, one of the earliest web browsers.
+
+Collaboration with Sun Microsystems: Netscape collaborated with Sun Microsystems to rename the language "JavaScript" in 1995. The name change was meant to capitalize on the popularity of Sun's Java programming language.
+
+Standardization by ECMA: In 1997, Netscape submitted JavaScript to the European Computer Manufacturers Association (ECMA) for standardization. The standardization process resulted in ECMAScript, the official name for the JavaScript standard.
+
+ECMAScript Versions: The first edition of ECMAScript, known as ECMAScript 1, was released in 1997. Since then, several versions have been released, each introducing new features and improvements. Notable versions include ECMAScript 3 (1999), ECMAScript 5 (2009), ECMAScript 6 (2015, also known as ES6 or ES2015), ECMAScript 2016, ECMAScript 2017, and ECMAScript 2018.
+
+Growth and Popularity: JavaScript's popularity grew rapidly over the years due to its ability to enhance the interactivity and user experience of websites. It became a vital component of web development, enabling developers to build dynamic web applications.
+
+Client-Side and Server-Side: JavaScript was primarily used as a client-side language, running in web browsers. However, with the introduction of Node.js in 2009, JavaScript became capable of running on the server-side as well, expanding its areas of application.
+
+Frameworks and Libraries: A vibrant ecosystem of frameworks and libraries emerged around JavaScript, making it easier for developers to build complex applications. Notable frameworks include AngularJS, React, and Vue.js, while libraries like jQuery and lodash provided additional functionalities.
+
+Modern JavaScript: ES6 introduced significant enhancements to the language, including arrow functions, classes, modules, and promises. These additions improved code readability, maintainability, and productivity for developers. Modern JavaScript development often involves transpilers like Babel to convert newer syntax into older versions supported by various web browsers.
+
+Web APIs: JavaScript gained access to various Web APIs, enabling developers to interact with different browser features and functionalities. This includes the Document Object Model (DOM) API for manipulating web page content, the XMLHttpRequest API for making asynchronous requests, and the Canvas API for drawing graphics.
+
+JavaScript Beyond the Web: With the rise of technologies like Node.js and Electron, JavaScript expanded beyond web browsers. It is now used for server-side development, desktop application development, mobile app development, and even Internet of Things (IoT) devices.
+
+    JS ENGINE:
+
+A JavaScript engine is a software component that executes JavaScript code. It is responsible for interpreting and running JavaScript programs in a browser environment. Let's dive deeper into how a JavaScript engine works:
+
+Lexical Analysis: The JavaScript engine starts by performing lexical analysis, also known as tokenization. It scans the JavaScript source code and breaks it down into a sequence of meaningful tokens, such as keywords, identifiers, operators, and literals.
+
+Parsing: After tokenization, the engine proceeds to parse the tokens and create an Abstract Syntax Tree (AST). The AST represents the structure and meaning of the code, capturing the relationships between different elements and their respective operations.
+
+Compilation: Once the AST is constructed, the engine compiles it into an intermediate representation or bytecode, which is a lower-level, platform-independent representation of the code. This bytecode can be more efficiently executed by the engine than the original source code.
+
+Optimization: Modern JavaScript engines employ various optimization techniques to improve the performance of the executed code. These optimizations aim to make the code execute faster and consume fewer resources. Examples of optimizations include inlining functions, identifying hot paths, and applying just-in-time (JIT) compilation.
+
+Execution: The engine executes the compiled bytecode or performs just-in-time compilation to convert the bytecode into machine code that can be directly executed by the computer's processor. The executed code performs the desired operations, such as calculations, variable assignments, function invocations, and interactions with the DOM or other browser APIs.
+
+Memory Management: JavaScript engines have built-in garbage collectors that automatically manage memory allocation and deallocation. They track objects that are no longer needed by the code and reclaim their memory to prevent memory leaks.
+
+Event Loop: In addition to executing JavaScript code, the engine also handles the event loop, which is responsible for managing asynchronous operations. When an asynchronous operation, such as an HTTP request or a timer, is encountered, the engine delegates the task to the appropriate system components, and the event loop continues to process other events and tasks.
+
+It's important to note that JavaScript engines are continuously evolving, and different engines may have unique optimizations, features, and performance characteristics. Examples of popular JavaScript engines include V8 (used in Chrome and Node.js), SpiderMonkey (used in Firefox), and JavaScriptCore (used in Safari). These engines compete to provide faster execution speeds and better support for the latest JavaScript features and standards.
+
+    JS for Server side applications:
+
+Node.js is an open-source, server-side JavaScript runtime environment that allows developers to build scalable and efficient network applications. Here's an overview of how Node.js was created:
+
+The Need for JavaScript on the Server: JavaScript was traditionally used as a client-side language, running in web browsers to enhance interactivity on web pages. However, in the mid-2000s, Ryan Dahl, the creator of Node.js, recognized the limitations of existing server-side technologies and saw an opportunity to use JavaScript on the server.
+
+Initial Development: Dahl started experimenting with embedding the Google V8 JavaScript engine, which powers Chrome, into a standalone C++ program. He aimed to create a lightweight and high-performance runtime environment that could execute JavaScript code outside the browser.
+
+Libuv Integration: Dahl realized that efficient I/O operations were crucial for server applications, so he integrated libuv, a multi-platform library for asynchronous I/O, into the Node.js project. Libuv provides an abstraction layer for handling asynchronous operations, such as file system operations and network requests, allowing Node.js to handle high concurrency efficiently.
+
+Release and Growing Community: Node.js was officially released in 2009, and its performance and scalability attracted attention from developers. It gained popularity as a platform for building real-time web applications, microservices, and APIs due to its non-blocking, event-driven architecture.
+
+Package Manager (npm): One of the key factors contributing to Node.js' success is npm (Node Package Manager), which is the default package manager for Node.js. npm provides a vast ecosystem of reusable modules and libraries, allowing developers to easily share, discover, and install dependencies for their Node.js projects.
+
+Community Support and Collaborative Development: Node.js quickly gained a vibrant and active community. The open-source nature of the project encouraged developers to contribute to its development, improving performance, fixing bugs, and introducing new features. The community's feedback and collaboration have been instrumental in shaping Node.js over time.
+
+Evolution and Maturity: Node.js has gone through multiple major releases since its initial launch. These releases introduced new features, improved performance, and addressed scalability challenges. The project continues to evolve, with regular updates and improvements based on the needs and feedback of the community.
+
+Today, Node.js is widely adopted for various server-side applications, ranging from web servers and APIs to real-time communication systems and data-intensive applications. It has become a popular choice for developers seeking a fast, scalable, and efficient runtime environment for JavaScript-based server-side development.
+
+    Note:
+
+the JavaScript engines used in web browsers and Node.js for server-side JavaScript are different. Here's an explanation:
+
+Browsers: Web browsers, such as Chrome, Firefox, Safari, and Edge, use their respective JavaScript engines to execute JavaScript code within the browser environment. For example, Chrome uses the V8 engine, Firefox uses SpiderMonkey, Safari uses JavaScriptCore, and Edge (since switching to the Chromium base) also uses V8.
+
+Node.js: Node.js, being a server-side JavaScript runtime, utilizes its own JavaScript engine called V8. The V8 engine, developed by the Chromium project, is open-source and provides high-performance JavaScript execution. It is the same engine that powers Chrome, but the version of V8 used by Node.js may differ slightly from the one used in the browser, as they have different target environments and requirements.
+
+While the underlying V8 engines share a common heritage, they may have some differences and optimizations specific to their respective environments. Node.js utilizes V8 to execute JavaScript on the server, allowing developers to leverage the same language and runtime on both the client and server sides of web development. This enables code sharing, reusability, and consistent programming patterns between client-side and server-side JavaScript applications.
+
+    CORE:
+
+the term "core" typically refers to a central processing unit (CPU) core. A CPU core is a physical processing unit within a computer's CPU that is capable of executing instructions and performing calculations.
+
+Modern CPUs often consist of multiple cores, allowing for parallel processing and improved performance. Each core within a CPU can independently execute instructions, allowing for multiple tasks or threads to be processed simultaneously.
+
+Having multiple CPU cores enables concurrent execution of tasks, which can improve the overall performance and responsiveness of a computer system. Tasks can be distributed across different cores, allowing for efficient multitasking and parallel execution of computations.
+
+For example, a quad-core CPU has four separate CPU cores, while an octa-core CPU has eight cores. Each core operates independently and can handle its own set of instructions, contributing to the overall processing power of the CPU.
+
+The presence of multiple CPU cores enables better utilization of system resources and facilitates faster and more efficient execution of software, including JavaScript code. However, it's important to note that JavaScript, as a single-threaded language, runs within a single CPU core, regardless of how many cores are available in the hardware.
+
+    Javascript is a single-threaded language:
+
+JavaScript is indeed single-threaded. JavaScript in web browsers and Node.js operates using a single execution thread. This means that JavaScript code is executed sequentially, one instruction at a time, in a single call stack.
+
+In a single-threaded environment, only one task can be executed at any given moment. If a task takes a long time to complete, it can block the execution of subsequent tasks, causing delays and potentially making the application unresponsive.
+
+However, it's important to note that JavaScript environments, such as web browsers, provide mechanisms to handle asynchronous operations effectively, even though the JavaScript language itself is single-threaded. For example, JavaScript supports asynchronous operations through techniques like callbacks, Promises, and async/await syntax.
+
+Asynchronous operations, such as making network requests, reading and writing files, and timers, can be managed using non-blocking mechanisms. These mechanisms allow JavaScript to initiate an asynchronous operation and continue executing other code without waiting for the operation to complete. Once the asynchronous operation finishes, a callback function or a Promise is used to handle the result.
+
+By leveraging these asynchronous patterns and APIs, JavaScript can handle I/O operations efficiently without blocking the main execution thread. This enables JavaScript to provide responsiveness and handle concurrent tasks effectively, even though the language itself is single-threaded.
+
+    Single Threaded Environment:
+
+example coming soon:
+
+Asynchronous Operations:
+JS is single-threaded but we can execute asynchronous operations using asynchronous patterns like the following example with JavaScript that can handle I/O operations efficiently without blocking the main execution thread and waiting for the result to complete before executing the next asynchronous operation.
+
+Asynchronous programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished. Once that task has finished, your program is presented with the result.
