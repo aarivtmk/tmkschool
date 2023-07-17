@@ -1,0 +1,46 @@
+Things to learn
+
+the 4 key parts
+1.http servers 2. authentication 3. database
+4.middlewares
+
+1.http servers
+
+1. request methods
+2. url route
+3. query params, header, body
+4. status codes
+5. response : html,json, text
+
+CLIENT SERVER MODEL
+HTTP servers
+EXPRESS
+
+CLIENT SERVER MODEL
+PRE INTERNET, machines could not share the data among one another
+example: universities
+
+http protocol:
+machines use this protocol to communicate with one another
+
+broswer/app/(client) ------> aws server
+
+An HTTP server is a software program or module that listens for incoming HTTP requests from clients (such as web browsers) and provides corresponding HTTP responses. It allows communication between clients and servers over the Hypertext Transfer Protocol (HTTP), which is the foundation of data communication on the web.
+
+HTTP servers handle various types of requests, such as GET, POST, PUT, DELETE, and others, and generate appropriate responses based on the received requests. The server-side logic can process the requests, retrieve or update data from databases, execute business logic, and generate dynamic content to be sent back to the client.
+
+HTTP servers play a crucial role in web development, as they serve web pages, APIs, and other web resources. They provide the backbone for handling client-server communication and enable the functioning of web applications.
+
+Some common features of an HTTP server include:
+
+Listening for incoming requests on a specific network port.
+Parsing incoming requests to extract relevant information, such as request method, URL, headers, and payload.
+Routing requests to appropriate handlers based on URL patterns.
+Executing business logic or processing data based on the request.
+Generating HTTP responses with appropriate status codes, headers, and response bodies.
+Serving static files (such as HTML, CSS, and JavaScript files) from the file system.
+Supporting various authentication and authorization mechanisms.
+Enabling secure communication over HTTPS using SSL/TLS.
+HTTP servers can be implemented using different programming languages and frameworks, such as Node.js with the built-in http module or using web frameworks like Express.js, Flask (Python), Django (Python), Ruby on Rails (Ruby), and many more.
+
+Overall, an HTTP server acts as the intermediary between clients and servers, handling HTTP requests and providing responses to facilitate communication and data exchange on the web.

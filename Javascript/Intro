@@ -117,11 +117,101 @@ Asynchronous operations, such as making network requests, reading and writing fi
 
 By leveraging these asynchronous patterns and APIs, JavaScript can handle I/O operations efficiently without blocking the main execution thread. This enables JavaScript to provide responsiveness and handle concurrent tasks effectively, even though the language itself is single-threaded.
 
-    Single Threaded Environment:
+Examples:
+Single Threaded Environment:
 
-example coming soon:
+var a = 3
+if (a%2==0){
+a is event
+}
+else{
+a is odd
+}
 
 Asynchronous Operations:
 JS is single-threaded but we can execute asynchronous operations using asynchronous patterns like the following example with JavaScript that can handle I/O operations efficiently without blocking the main execution thread and waiting for the result to complete before executing the next asynchronous operation.
 
 Asynchronous programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished. Once that task has finished, your program is presented with the result.
+
+Example:
+console.log("Start");
+
+setTimeout(() => {
+console.log("Async operation completed after 2 seconds");
+}, 2000);
+
+console.log("End");
+
+OUtput:
+Start
+End
+Async operation completed after 2 seconds
+
+js runtime : http://latentflip.com/loupe/
+
+1. callstack: how the code is being run or flow of code execution
+   webapis
+   In the context of JavaScript and web browsers, the term "Web API" refers to a set of interfaces and methods provided by the browser environment that allow JavaScript code to interact with the browser and perform various tasks. These APIs provide functionality beyond the core language features of JavaScript.
+
+In the example of setTimeout, the setTimeout function itself is not part of the JavaScript language itself, but rather a function provided by the Web API in the browser environment. The Web API includes a collection of functions and interfaces that enable asynchronous behavior, interact with the Document Object Model (DOM), make network requests, handle events, manipulate the browser history, access geolocation information, and much more.
+
+The Web API acts as an intermediary between JavaScript code and the browser environment, allowing developers to access and control various browser features and perform tasks that are not possible with the core JavaScript language alone.
+
+Examples of other commonly used Web APIs in the browser environment include:
+
+DOM API: Allows manipulation and interaction with the HTML structure of a web page.
+XMLHttpRequest and Fetch API: Enable making HTTP requests to retrieve data from servers.
+Geolocation API: Provides access to the user's geographical location information.
+Web Storage API: Enables storing and retrieving data on the client-side.
+Web Audio API: Offers capabilities for audio processing and synthesis.
+These Web APIs extend the capabilities of JavaScript, allowing developers to create rich and interactive web applications.
+
+3 EVENT LOOP:
+
+The event loop is a fundamental concept in JavaScript that enables asynchronous and non-blocking behavior in single-threaded environments like web browsers. It's responsible for managing the execution of code and handling events.
+
+In JavaScript, code execution happens within an event loop. The event loop continuously checks for new events or tasks to execute and handles them accordingly. It consists of two main components: the call stack and the task queue (also known as the event queue).
+
+Call Stack: The call stack is a data structure that keeps track of the execution context of functions. When a function is called, a new frame is added to the top of the stack. The code within that function is executed sequentially until it reaches the end or encounters a function invocation.
+
+Task Queue (Event Queue): The task queue holds tasks or events that are ready to be executed. These tasks can include events such as mouse clicks, timers, network responses, or other asynchronous operations.
+
+The event loop follows these steps:
+
+The JavaScript engine starts by executing the code in the global scope.
+As functions are called, they are added to the call stack, and their code is executed.
+If an asynchronous operation, such as a setTimeout, is encountered, it's offloaded to a Web API provided by the browser.
+Once the timer or asynchronous task is completed, the corresponding callback is placed in the task queue.
+The event loop checks if the call stack is empty. If it is, it moves the first callback from the task queue to the call stack for execution.
+The callback is executed, and if it invokes more functions, they are added to the call stack, continuing the process.
+This cycle repeats, with the event loop continuously checking for new tasks in the task queue and executing them when the call stack is empty.
+The event loop allows JavaScript to handle asynchronous operations efficiently, ensuring that other code can continue executing while waiting for events or long-running tasks to complete. It prevents blocking and keeps the application responsive.
+
+Understanding the event loop is crucial for writing efficient and well-performing asynchronous JavaScript code. It ensures that tasks are executed in the correct order and prevents the main thread from being locked or unresponsive.
+
+4 CALLBACK QUEUE
+
+5. CALLBACK HELL
+   Callback hell, also known as the pyramid of doom, is a situation that arises when working with asynchronous JavaScript code that heavily relies on callbacks. It occurs when multiple asynchronous operations are nested within each other, resulting in deeply nested and indented code, which can become difficult to read, understand, and maintain.
+
+Here's an example to illustrate the callback hell:
+
+setTimeout(function () {
+console.log("First operation");
+setTimeout(function () {
+console.log("Second operation");
+setTimeout(function () {
+console.log("Third operation");
+setTimeout(function () {
+console.log("Fourth operation");
+// More nested setTimeout callbacks...
+}, 1000);
+}, 1000);
+}, 1000);
+}, 1000);
+
+function fileIsRead(content){
+console.log(content)
+}
+fs.read(a.txt,fileIsRead)
+fs.read(a.txt).then(fileIsRead)
