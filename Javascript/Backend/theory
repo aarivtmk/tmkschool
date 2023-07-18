@@ -44,3 +44,46 @@ Enabling secure communication over HTTPS using SSL/TLS.
 HTTP servers can be implemented using different programming languages and frameworks, such as Node.js with the built-in http module or using web frameworks like Express.js, Flask (Python), Django (Python), Ruby on Rails (Ruby), and many more.
 
 Overall, an HTTP server acts as the intermediary between clients and servers, handling HTTP requests and providing responses to facilitate communication and data exchange on the web.
+
+create a file code.js
+initilaize package.json using npm -init -y
+
+1. request methods
+
+get, put,post , delete
+
+2. url & route www.tmkcafe.com/blockchain
+   url: www.tmkspace.com
+   route: /blockchain
+
+every http request will have a url, route, request method
+
+we use 3. query params, header, body
+to send the input
+eg:
+?counter = 200
+http://localhost:3000/?counter=100
+
+middleware: for authentication, verifying the requests and so on...
+
+visit tmkschool.com/notehub
+
+1. request
+2. authentication middleware
+3. server
+
+install
+npm install body-parser
+
+client to server
+url, router, query_params, header, middleware, body,
+
+server to client
+status, body, header
+
+status code:
+
+body types
+html
+json
+simple text
